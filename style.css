@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: white;
+  width: 100%;
+}
+.banner {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  top: 20px;
+}
+.banner .imgBx {
+  width: 1200px;
+  height: 500px;
+}
+
+.banner .imgBx img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.banner .info {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: aliceblue;
+}
+.banner .info h1 {
+  margin: 25px;
+  font-size: 36px;
+  text-shadow: black (0.1em 0.1em 0.2em);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.banner .info span {
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.avatar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 10px solid white;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  box-shadow: black 0 0 1px 1px;
+}
+.avatar img {
+  width: 200px;
+  height: 200px;
+}
+.menuItem {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+.menuItem .item1 {
+  position: relative;
+  left: 20%;
+  border-left: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+  padding: 20px;
+}
+.menuItem .item2 {
+  position: relative;
+  border-right: 0.5px solid lightgrey;
+  left: 5%;
+  padding: 15px;
+}
+.menuItem .item2 .icon {
+  margin-left: -50%;
+}
+.menuItem .item4 {
+  position: relative;
+  left: -10%;
+  border-left: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+  padding: 15px;
+}
+.menuItem .item5 {
+  position: relative;
+  left: -25%;
+  border-right: 0.5px solid lightgrey;
+  padding: 15px;
+}
+.menuItem .item5 .icon {
+  margin-left: -50%;
+}
+.menuItem .icon {
+  color: deepskyblue;
+}
+.center {
+  background-color: #eee;
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  top: 45px;
+  justify-content: center;
+  align-items: center;
+}
+.center .objective {
+  width: 40%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.center .personalInfo {
+  width: 40%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.center .personalInfo ul li {
+  list-style: none;
+}
+.center h2 {
+  margin: 20px;
+}
+.social {
+  padding-top: 20px;
+  margin-left: 25px;
+  font-size: 20px;
+  color: deepskyblue;
+}
+.background {
+  width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.background .bg {
+  width: 30%;
+  height: 550px;
+  border: 1px solid rgb(202, 201, 201);
+  padding: 10px;
+}
+.background .bg .exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .exp .icon {
+  font-size: 50px;
+  /* margin-right: 50px; */
+  color: lightgray;
+}
+.background .bg .exp h3 {
+  font-size: 36px;
+}
+.background .bg .time {
+  display: flex;
+  padding: 10px;
+}
+.background .bg .time .now {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(50, 154, 234);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.background .bg .skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .skill .icon {
+  font-size: 50px;
+  /* margin-right: 50px; */
+  color: lightgray;
+}
+.background .bg .skill h3 {
+  font-size: 36px;
+}
+.background .bg .line .containerX {
+  display: flex;
+}
+.background .bg .line .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: lightgrey;
+  margin: 10px;
+}
+.background .bg .line .containerX :first-child {
+  background-color: deepskyblue;
+}
+.background .bg .line {
+  padding: 20px;
+}
+/*line 2*/
+.background .bg .line2 .containerX {
+  display: flex;
+  padding: 5px;
+}
+.background .bg .line2 .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: deepskyblue;
+  margin: 10px;
+}
+.background .bg .line2 .containerX :last-child {
+  background-color: lightgrey;
+}
+.background .bg .line2 {
+  padding: 20px;
+}
+/*line 3*/
+.background .bg .line3 .containerX {
+  display: flex;
+  padding: 5px;
+}
+.background .bg .line3 .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: deepskyblue;
+  margin: 10px;
+}
+.background .bg .line3 .containerX :last-child {
+  background-color: lightgrey;
+}
+.background .bg .line3 {
+  padding: 20px;
+}
+/*line 4*/
+.background .bg .line4 .containerX {
+  display: flex;
+  padding: 5px;
+}
+.background .bg .line4 .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: lightgrey;
+  margin: 10px;
+}
+.background .bg .line4 .containerX :first-child {
+  background-color: deepskyblue;
+}
+.background .bg .line4 {
+  padding: 20px;
+}
+/*ngôn ngữ*/
+.background .bg .lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .lang .icon {
+  font-size: 50px;
+  color: lightgray;
+}
+.background .bg .lang h3 {
+  font-size: 36px;
+}
+.background .bg .containerX {
+  display: flex;
+}
+/*line5*/
+.background .bg .line5 .containerX .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: deepskyblue;
+  margin: 10px;
+}
+.background .bg .line5 .containerX :last-child {
+  background-color: lightgrey;
+}
+.background .bg .line5 {
+  padding: 20px;
+}
+/*line 6*/
+.background .bg .line6 .containerX .x {
+  display: flex;
+  width: 50px;
+  height: 5px;
+  background-color: lightgrey;
+  margin: 10px;
+}
+.background .bg .line6 .containerX :first-child {
+  background-color: deepskyblue;
+}
+.background .bg .line6 {
+  padding: 20px;
+}
+/*hoạt động*/
+.background .bg .activ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .activ .icon {
+  font-size: 50px;
+  color: lightgray;
+}
+.background .bg .activ h3 {
+  font-size: 36px;
+}
+.background .bg .hd {
+  padding: 20px;
+}
+.background .bg .hd li {
+  padding: 20px;
+}
+.background .bg .hd h4 {
+  font-size: 20px;
+  color: rgb(190, 188, 188);
+}
+.background .bg .hd :nth-child(2) {
+  font-style: italic;
+}
+/*học vấn*/
+.background .bg .education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .education .icon {
+  font-size: 50px;
+  color: lightgray;
+}
+.background .bg .education h3 {
+  font-size: 36px;
+}
+.background .bg .edu {
+  padding: 20px;
+}
+.background .bg .edu li {
+  padding: 20px;
+}
+.background .bg .edu h4 {
+  font-size: 20px;
+  color: rgb(190, 188, 188);
+}
+.background .bg .edu :nth-child(2) {
+  font-style: italic;
+}
+/*sở thích*/
+.background .bg .hobby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.background .bg .hobby .icon {
+  font-size: 50px;
+  color: lightgray;
+}
+.background .bg .hobby h3 {
+  font-size: 36px;
+}
+.background .bg .hobby__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.background .bg .hobby__icon .y {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 4px solid deepskyblue;
+  border-radius: 50%;
+}
+.background .bg .hobby__icon .y .hobby__icon--o {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  font-size: 26px;
+  color: deepskyblue;
+}
+/*giải thưởng*/
+.awards {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: rgb(243, 240, 240);
+}
+.awards .rewards {
+  width: 44%;
+  height: 250px;
+  margin-left: 35px;
+  display: flex;
+}
+.awards .rewards img {
+  width: 50%;
+  height: 230px;
+}
+.awards .rewards h4 {
+  text-transform: uppercase;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+.awards .rewards span {
+  font-size: 12px;
+  color: darkgray;
+}
+.awards .line1 {
+  width: 0.5px;
+  height: 230px;
+  border: 2px solid orange;
+  background-color: orange;
+  margin-left: 15px;
+}
+.awards .line2 {
+  width: 100%;
+  height: 0.5px;
+  border: 1px solid orange;
+  background-color: orange;
+}
+/*project, dự án*/
+.project {
+  width: 1200px;
+  border: 1px solid black;
+  margin: 100px auto;
+}
+.project .project__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.project .project__container .myProject {
+  width: 30%;
+
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+.project .project__container .myProject .projectImgbx {
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+}
+.project .project__container .myProject .projectImgbx img {
+  width: 100%;
+  height: 230px;
+}
+.project .project__container .myProject .p {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
